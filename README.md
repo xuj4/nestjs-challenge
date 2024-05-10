@@ -1,6 +1,17 @@
-## Description
+## Todo list 
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+1. Create a simple controller, service and entity 
+2. Create a database and return data from table 
+3. Create a post/put/delete operation 
+4. Create login session
+5. Add logout operation
+6. Create child object task of project 
+7. Add some unit tests 
+8. Add message queue
+9. exlpore graphQL
+10. add ORM 
+11. add interceptor 
+12. more ... 
 
 ## Installation
 
