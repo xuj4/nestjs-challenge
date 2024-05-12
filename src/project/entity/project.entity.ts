@@ -1,9 +1,16 @@
-import { ApiProperty } from '@nestjs/swagger';
+import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 
+@Entity()
 export class Project {
-  @ApiProperty()
+  @PrimaryGeneratedColumn()
   id: number;
 
-  @ApiProperty()
+  @Column()
   name: string;
+
+  @Column()
+  deadline: Date;
+
+  @Column('jsonb', { nullable: true })
+  options: string[];
 }
