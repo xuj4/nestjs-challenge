@@ -1,4 +1,10 @@
-import { IsArray, IsDate, IsString } from 'class-validator';
+import {
+  IsArray,
+  IsBoolean,
+  IsDate,
+  IsString,
+  IsNumber,
+} from 'class-validator';
 
 export class CreateProjectDto {
   @IsString()
@@ -8,5 +14,8 @@ export class CreateProjectDto {
   deadline: Date;
 
   @IsArray()
-  options: { option: string }[];
+  options: string[];
+
+  @IsNumber()
+  primaryAssigneeId: number;
 }
